@@ -9,6 +9,21 @@ use Illuminate\Support\Facades\Storage;
 
 class MyImageController extends Controller
 {
+    public function index()
+    {
+        $user = auth()->user();
+
+        $images = MyImage::all(); 
+        $images = $images->where('user_id', $user->id);
+
+        return view('myImages.index', $images, compact('images'));
+    }
+
+    public function create()
+    {
+        return view('myImages.create');
+    }
+    
     public function store(Request $request) 
     {
         $image = request()->except('_token');
@@ -18,6 +33,13 @@ class MyImageController extends Controller
         MyImage::create($image);
 
         return redirect()->route('home');
+    }
+
+    public function edit($id) 
+    {
+        $image = MyImage::find($id);
+
+        return view('myImages.edit', compact('image'));
     }
 
     public function update(Request $request, $id) 
