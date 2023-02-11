@@ -33,6 +33,17 @@ class MyImageController extends Controller
         return redirect()->route('home')->with('success', 'Updated');
     }
 
+    public function delete($id) 
+    {
+        $image = MyImage::findOrFail($id);
+
+        if (Storage::delete('public/'.$image->image)) {
+            MyImage::destroy($id);
+        }
+
+        return redirect()->route('home');
+    }
+
     private function storeImages($request, $image)
     {
         if ($request->hasFile('image')) {

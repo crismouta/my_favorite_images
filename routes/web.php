@@ -24,5 +24,6 @@ Auth::routes();
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('/images', [MyImageController::class, 'store'])->name('store')->middleware('auth');
 Route::put('/images/{id}', [MyImageController::class, 'update'])->name('update')->middleware('auth');
+Route::delete('/delete/{id}', [MyImageController::class, 'delete'])->name('delete')->middleware('auth');
 
 

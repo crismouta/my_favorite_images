@@ -47,9 +47,9 @@ class ImagesManagerTest extends TestCase
     $this->actingAs($user);
 
     $response = $this->post(route('store'), [
-      'title' => 'Test image title',
-      'description' => 'Test image description',
-      'image' => 'Test image'
+      'title' => 'My image title',
+      'description' => 'My image description',
+      'image' => 'My image'
     ]);
 
     $this->assertCount(1, MyImage::all());
@@ -61,5 +61,29 @@ class ImagesManagerTest extends TestCase
     ]);
         
     $this->assertEquals(MyImage::first()->title, 'Update Title');
+  }
+
+  public function test_an_image_can_be_deleted() 
+  {
+    $this->withoutExceptionHandling();
+
+    $user = User::factory()->create();
+    $this->actingAs($user);
+
+    $response = $this->post(route('store'), [
+      'title' => 'My image title',
+      'description' => 'My image description',
+      'image' => 'My image'
+    ]);
+
+    $this->assertCount(1, MyImage::all());
+
+    $image = MyImage::first();
+
+    $response = $this->delete(route('delete', $image->id));
+
+    $response->assertRedirect(route('home'));
+        
+    $this->assertCount(0, MyImage::all());
   }
 }
