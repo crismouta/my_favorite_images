@@ -15,27 +15,51 @@ class ImagesManagerTest extends TestCase
    *
    * @return void
    */
-    public function test_an_image_can_be_created_by_an_user()
-    {
-      $this->withoutExceptionHandling();
+  public function test_an_image_can_be_created_by_an_user()
+  {
+    $this->withoutExceptionHandling();
 
-      $user = User::factory()->create();
-      $this->actingAs($user);
+    $user = User::factory()->create();
+    $this->actingAs($user);
 
-      $response = $this->post(route('store'), [
-        'title' => 'Test image title',
-        'description' => 'Test image description',
-        'image' => 'Test image'
-      ]);
+    $response = $this->post(route('store'), [
+      'title' => 'Test image title',
+      'description' => 'Test image description',
+      'image' => 'Test image'
+    ]);
 
-      $response->assertRedirect(route('home'));
-      $this->assertCount(1, MyImage::all());
+    $response->assertRedirect(route('home'));
+    $this->assertCount(1, MyImage::all());
 
-      $image = MyImage::first();
+    $image = MyImage::first();
 
-      $this->assertEquals($image->title, 'Test image title');
-      $this->assertEquals($image->description, 'Test image description');
-      $this->assertEquals($image->image, 'Test image');
+    $this->assertEquals($image->title, 'Test image title');
+    $this->assertEquals($image->description, 'Test image description');
+    $this->assertEquals($image->image, 'Test image');
 
-    }
+  }
+
+  public function test_a_image_can_be_updated_by_an_user()
+  {
+    $this->withoutExceptionHandling();
+
+    $user = User::factory()->create();
+    $this->actingAs($user);
+
+    $response = $this->post(route('store'), [
+      'title' => 'Test image title',
+      'description' => 'Test image description',
+      'image' => 'Test image'
+    ]);
+
+    $this->assertCount(1, MyImage::all());
+
+    $image = MyImage::first();
+
+    $response = $this->put(route('update', $image->id), [
+          'title' => 'Update Title',
+    ]);
+        
+    $this->assertEquals(MyImage::first()->title, 'Update Title');
+  }
 }
