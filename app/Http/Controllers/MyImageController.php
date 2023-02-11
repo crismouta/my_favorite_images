@@ -49,6 +49,7 @@ class MyImageController extends Controller
         if ($request->hasFile('image')) {
             $imageName = Str::slug($request->title).".".$request->file('image')->guessExtension();
             $image['image'] = $request->file('image')->storeAs('img', $imageName,'public');
+            $image['user_id']=auth()->user()->id;
         }
 
         return ($image);
