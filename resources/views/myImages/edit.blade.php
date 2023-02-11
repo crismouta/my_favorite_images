@@ -5,7 +5,7 @@
   <form method="post" action="{{route('update', $image->id)}}" enctype="multipart/form-data">
     @method('put')
     @csrf
-    <div>
+    <div class="px-5 m-5">
       <div class="input-group mb-3">
         <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
         <input type="text" name="title" value="{{$image->title}}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
@@ -20,9 +20,9 @@
         <input type="text" name="description" value="{{$image->description}}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
       </div>
     </div>
-    <div>
-      <button type="submit" class="btn bt-create">Edit</button>
-      <button type="submit" class="btn bt-cancel ml-3">Cancel</button>
+    <div class="px-5 mx-5">
+      <button type="submit" class="btn btn-outline-dark">Edit</button>
+      <button type="submit" class="btn btn-outline-dark ml-3">Cancel</button>
     </div>
   </form>
 
@@ -36,4 +36,4 @@
     }
   </script>
 
-  @endsection
+@endsection

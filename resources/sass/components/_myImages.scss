@@ -12,10 +12,11 @@
 .card {
   display: flex; 
   padding: 1em;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: 40px;
-  width: 100%;
+  margin: 3em;
+}
+
+.card-img {
+  overflow: hidden;
 }
 
 .card-btn {
