@@ -1,5 +1,3 @@
-<p align="center"><img src="public/img/logo.jpg" width="400"></p>
-
 # Contexto del proyecto
 Aplicación creada para gestión de imagenes en la cual el usuario puede guardar, editar, borrar y visualizar sus imagens favoritas. 
 
