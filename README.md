@@ -38,7 +38,7 @@ My favorite images
 
 `crear una base de datos en PhpMyAdmin con el mismo nombre usado en el .env`
 
-`php artisan migrate:fresh --seed`
+`php artisan migrate:fresh`
 
 `php artisan storage:link`
 
@@ -48,6 +48,15 @@ My favorite images
 `php artisan serve`
 
 `npm run dev`
+
+## Running app with seeders
+
+Para visualizar las imágenes que están referenciadas en seeders:
+
+- copiar las 8 imágenes que se encuentran en la carpeta public/img/seeder a la carpeta storage/app/public/img, que por su vez se conecta a la carpeta public con el comando `php artisan storage:link`.
+
+- ejecutar el comando `php artisan migrate:fresh --seed`, teniendo en cuenta que se actualizarán todos los datos de la DB.
+
 
 ## Running Tests
 
