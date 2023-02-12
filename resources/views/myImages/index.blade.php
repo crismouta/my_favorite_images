@@ -11,7 +11,7 @@
 
         <div class="card-container pt-5">
             @foreach ($images as $image)
-              <div class="card" style="width: 18rem;">
+              <div class="card col-8" style="width: 25rem;">
                 <div class="card-img">
                   <img src="{{ asset('storage') . '/' . $image->image }}" class="card-img" alt={{ $image->title }}>
                 </div>

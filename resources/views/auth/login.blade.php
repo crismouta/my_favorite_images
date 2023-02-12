@@ -69,6 +69,6 @@
             </div>
         </div>
     </div>
-    <h1 class="title">Favotite Images</h1>
+    <h1 class="title">Favorite Images</h1>
 </div>
 @endsection
