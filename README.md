@@ -28,11 +28,11 @@ My favorite images
 # Instalación
 
 
-`clonar el repositorio: [https://github.com/ProjectComixSix/HangarRebelde.git](https://github.com/crismouta/my_favorite_images.git)`
+`clonar el repositorio: https://github.com/crismouta/my_favorite_images.git`
 
 `composer update`
 
-`npm install && npm run dev`
+`npm install`
 
 `crear archivo .env con nombre de la base de datos`
 
@@ -46,6 +46,8 @@ My favorite images
 ## Running app
 
 `php artisan serve`
+
+`npm run dev`
 
 ## Running Tests
 
