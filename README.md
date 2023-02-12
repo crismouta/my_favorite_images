@@ -24,15 +24,9 @@ My favorite images
 -  Cambair la imagen.
 -  Borrar imagenes.
 
-# Requisitos técnicos
-
--   Laravel 9
--   PHP 8
--   composer 1.10.15
 
 # Instalación
 
-**** info database
 
 `clonar el repositorio: [https://github.com/ProjectComixSix/HangarRebelde.git](https://github.com/crismouta/my_favorite_images.git)`
 
