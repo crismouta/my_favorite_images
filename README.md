@@ -28,7 +28,7 @@ My favorite images
 # Instalación
 
 
-`clonar el repositorio: [https://github.com/ProjectComixSix/HangarRebelde.git](https://github.com/crismouta/my_favorite_images.git)`
+`clonar el repositorio: https://github.com/crismouta/my_favorite_images.git`
 
 `composer update`
 
