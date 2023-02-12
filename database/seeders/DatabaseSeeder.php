@@ -22,14 +22,14 @@ class DatabaseSeeder extends Seeder
         MyImage::factory()->create([
             'title' => 'Autumn',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/autumn.jpg',            
+            'image' => 'img/autumn.jpg',            
             'user_id' => '1',
         ]);
 
         MyImage::factory()->create([
             'title' => 'Grass',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/grass.jpg',            
+            'image' => 'img/grass.jpg',            
             'user_id' => '1',
         ]);
 
@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
         MyImage::factory()->create([
             'title' => 'Mountain',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/mountain.jpg',            
+            'image' => 'img/mountain.jpg',            
             'user_id' => '1',
         ]);
 
@@ -45,35 +45,35 @@ class DatabaseSeeder extends Seeder
         MyImage::factory()->create([
             'title' => 'River',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/river.jpg',            
+            'image' => 'img/river.jpg',            
             'user_id' => '1',
         ]);
 
         MyImage::factory()->create([
             'title' => 'Winter',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/winter.jpg',            
+            'image' => 'img/winter.jpg',            
             'user_id' => '2',
         ]);
 
         MyImage::factory()->create([
             'title' => 'Pink and Blue Skye',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/pink-and-blue-sky.jpg',            
+            'image' => 'img/pink-and-blue-sky.jpg',            
             'user_id' => '2',
         ]);
 
         MyImage::factory()->create([
             'title' => 'Tree',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/tree.jpg',            
+            'image' => 'img/tree.jpg',            
             'user_id' => '2',
         ]);
 
         MyImage::factory()->create([
             'title' => 'Beach',
             'description' => 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.',
-            'image' => 'img/seeder/beach.jpg',            
+            'image' => 'img/beach.jpg',            
             'user_id' => '2',
         ]);
     }

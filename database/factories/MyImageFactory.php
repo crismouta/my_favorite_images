@@ -19,7 +19,7 @@ class MyImageFactory extends Factory
         return [
             'title'=> $this->faker->sentence(),
             'description'=> $this->faker->realText(),
-            'image'=> $this->faker->imageUrl(640,480, null, false),
+            'image'=> $this->faker->imageUrl(600,300, null, false),
         ];
     }
 }
