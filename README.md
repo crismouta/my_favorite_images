@@ -60,8 +60,9 @@ Para visualizar las imágenes que están referenciadas en seeders:
 - ejecutar el comando `php artisan migrate:fresh --seed`, teniendo en cuenta que se actualizarán todos los datos de la DB.
 
 - hacer login con algunos de los usuarios gerenados por seeders:
-    -opción 1: email:user1@user.com, contrseña:password
-    -opción 2: email:user2@user.com, contrseña:password
+ 
+ opción 1: email:`user1@user.com`, contrseña:`password`
+ opción 2: email:`user2@user.com`, contrseña:`password`
 
 
 ## Running Tests
