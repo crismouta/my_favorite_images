@@ -47,6 +47,8 @@ My favorite images
 
 `php artisan serve`
 
+-clicar en la opción GENERATE APP KEY
+
 `npm run dev`
 
 ## Running app with seeders
@@ -56,6 +58,10 @@ Para visualizar las imágenes que están referenciadas en seeders:
 - copiar las 8 imágenes que se encuentran en la carpeta public/img/seeder a la carpeta storage/app/public/img, que por su vez se conecta a la carpeta public con el comando `php artisan storage:link`.
 
 - ejecutar el comando `php artisan migrate:fresh --seed`, teniendo en cuenta que se actualizarán todos los datos de la DB.
+
+- hacer login con algunos de los usuarios gerenados por seeders:
+    -opción 1: email:user1@user.com, contrseña:password
+    -opción 2: email:user2@user.com, contrseña:password
 
 
 ## Running Tests
