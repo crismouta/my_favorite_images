@@ -47,7 +47,7 @@ My favorite images
 
 `php artisan serve`
 
--clicar en la opción GENERATE APP KEY
+- clicar en la opción GENERATE APP KEY
 
 `npm run dev`
 
@@ -61,8 +61,9 @@ Para visualizar las imágenes que están referenciadas en seeders:
 
 - hacer login con algunos de los usuarios gerenados por seeders:
  
- opción 1: email:`user1@user.com`, contrseña:`password`
- opción 2: email:`user2@user.com`, contrseña:`password`
+- opción 1: email:`user1@user.com`, contrseña:`password`
+
+- opción 2: email:`user2@user.com`, contrseña:`password`
 
 
 ## Running Tests
