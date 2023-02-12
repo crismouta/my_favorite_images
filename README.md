@@ -57,10 +57,6 @@ My favorite images
 -   Tests
 -   MVC
 
-### Autora
-
--   Cris Mouta
-
 
 ## Herramientas y tecnologías utilizadas
 - HTML5
@@ -73,3 +69,8 @@ My favorite images
 - XAMPP
 - Laravel
 - Javascript
+
+
+### Autora
+
+-   Cris Mouta
