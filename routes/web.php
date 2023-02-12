@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyImageController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [MyImageController::class, 'index'])->name('home')->middleware('auth');
+Route::post('/images', [MyImageController::class, 'store'])->name('store')->middleware('auth');
+Route::get('/create', [MyImageController::class, 'create'])->name('create')->middleware('auth');
+Route::put('/images/{id}', [MyImageController::class, 'update'])->name('update')->middleware('auth');
+Route::delete('/delete/{id}', [MyImageController::class, 'delete'])->name('delete')->middleware('auth');
+Route::get('/edit/{id}', [MyImageController::class, 'edit'])->name('edit')->middleware('auth');
+
+
