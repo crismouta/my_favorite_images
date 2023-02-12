@@ -32,7 +32,7 @@ My favorite images
 
 `composer update`
 
-`npm install && npm run dev`
+`npm install`
 
 `crear archivo .env con nombre de la base de datos`
 
@@ -46,6 +46,8 @@ My favorite images
 ## Running app
 
 `php artisan serve`
+
+`npm run dev`
 
 ## Running Tests
 
